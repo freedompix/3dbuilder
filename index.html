@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+	<title></title>
+	<style>
+body {margin: 0;	padding: 0;					overflow: hidden;	}
+.loaderStyle{display:inline-block;width:80px;height:80px;position:absolute;top:50vh;left:50vw;margin-top:-40px;margin-left:-40px}
+.loaderStyle:after{content:" ";display:block;width:64px;height:64px;margin:8px;border-radius:50%;border:2px solid #fff;border-color:#fff transparent #fff transparent;animation:loaderStyle 1.2s linear infinite}
+.loaderStyle2{display:inline-block;width:60px;height:60px;position:absolute;top:50vh;left:50vw;margin-top:-30px;margin-left:-30px}
+.loaderStyle2:after{content:" ";display:block;width:52px;height:52px;margin:4px;border-radius:50%;border:2px solid #fff;border-color:#fff transparent #fff transparent;animation:loaderStyle2 1.2s linear infinite}
+.loaderStyle:after, .loaderStyle2:after
+{
+box-shadow: inset 0 0 2px rgba(255,233,233,1.75), 0 0 2px rgba(255, 233, 233, 1.7);
+}
+
+
+@keyframes loaderStyle{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+@keyframes loaderStyle2{0%{transform:rotate(0)}100%{transform:rotate(-360deg)}}
+	</style>
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 	
+	
+	
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="app/babylon.js"></script>
+<script src="app/babylonjs.loaders.min.js"></script>
+<script src="https://preview.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+<script src="app/app.js"></script>
+</head>
+<body>
+
+<canvas id="renderCanvas"></canvas>
+
+<div class="" id="topDiv">
+<div id="logotype"></div>
+</div>
+
+
+<div class="" id="viewSelector">
+<div class="" id="2dButton"></div>
+<div class="" id="3dButton"></div>
+</div>
+
+
+<div class="" id="builderUI">
+
+<div class="builderBlockStyleActive" id="builderBlock1">
+<div class="builderBlockTextActive" id="builderBlockText1">1.OType overkapping</div>
+<div class="builderArrowActive" id="builderArrow1"></div>
+</div>
+
+<div id="builderOptions1">
+
+<div class="builderOptionText">Kies uw overkapping</div>
+
+
+<div class="optionHouseActive" id="optionHouse1" onclick="buildingType1Select(); return false;">
+<div class="optionHouseCheckboxActive" id="optionHouse1Checkbox"></div>
+<div id="optionHouse1image"></div>
+<div class="optionHouseText">Platdak</div>
+</div>
+
+
+
+<div class="optionHouseInactive" id="optionHouse2" onclick="buildingType2Select(); return false;">
+<div class="optionHouseCheckboxInctive" id="optionHouse2Checkbox"></div>
+<div id="optionHouse2image"></div>
+<div class="optionHouseText">Kapschuur</div>
+</div>
+</div>
+
+
+
+<div class="builderBlockStyleInactive" id="builderBlock2">
+
+<div class="builderBlockTextInactive" id="builderBlockText2">2.Afmetingen</div>
+<div class="builderArrowInactive" id="builderArrow2"></div>
+
+
+</div>
+
+
+
+<div class="builderBlockStyleInactive" id="builderBlock3">
+
+<div class="builderBlockTextInactive" id="builderBlockText3">3.Wanden</div>
+<div class="builderArrowInactive" id="builderArrow3"></div>
+
+
+</div>
+<div class="builderBlockStyleInactive" id="builderBlock4">
+
+<div class="builderBlockTextInactive" id="builderBlockText4">4.Berging</div>
+<div class="builderArrowInactive" id="builderArrow4"></div>
+
+</div>
+<div class="builderBlockStyleInactive" id="builderBlock5">
+
+<div class="builderBlockTextInactive" id="builderBlockText5">5.Opties</div>
+<div class="builderArrowInactive" id="builderArrow5"></div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="" id="icon2D"></div>
+<div class="" id="icon3D"></div>
+
+<div class="" id="iconZoomIn"></div>
+<div class="" id="iconZoomOut"></div>
+
+<div class="" id="iconFullScreen"></div>
+<div class="" id="iconInfo"></div>
+
+
+<div class="" id="optionsBox">
+</div>
+
+
+
+
+<div class=""  id="loaderBG"></div>
+<div class="loaderStyle"  id="loader1"></div>
+<div class="loaderStyle2" id="loader2"></div>
+</body>
+</html>

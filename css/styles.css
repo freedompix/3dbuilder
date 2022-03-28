@@ -1,0 +1,360 @@
+#loaderBG {
+  width:100vw;
+  height:100vh;
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: #CCCCCC;	
+}
+
+#renderCanvas{
+  width:calc(100vw - 468px);
+  height:100vh;
+  position:absolute;
+  top:0;
+  left:468px;	
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+}
+
+
+
+
+#topDiv{
+  width:100vw;
+  height:56px;
+  position:absolute;
+  top:0;
+  left:0;
+background-color: #000000;	  
+  
+}
+
+#logotype{
+  width:171px;
+  height:56px;
+  top:0;
+  left:25px;  
+  position:relative;	
+  background-image:  url("../css/logotype.png");
+  background-repeat: no-repeat;
+
+}
+
+.builderBlockStyleInactive
+{
+  width:468px;
+  height:56px;
+  top:0;
+  left:0px;  
+  position:relative;
+  background-color: #F3F3F3;
+  color: #000000;
+  margin-bottom: 2px;
+   
+  }
+  
+ .builderBlockStyleActive
+{
+  width:468px;
+  height:56px;
+  top:0;
+  left:0px;  
+  position:relative;
+  background-color: #FF0000;
+  color: #000000;
+  margin-bottom: 2px;
+   
+  } 
+  
+
+.builderBlockTextInactive
+{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-transform: uppercase;
+color: #170E0E; 
+position:absolute;
+top:18px;
+left:36px;  
+}
+  
+  
+ .builderBlockTextActive
+{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-transform: uppercase;
+color: #FFFFFF; 
+position:absolute;
+top:18px;
+left:36px;  
+} 
+  
+  
+  
+#builderUI
+{
+  width:468px;
+  height: calc(100vh - 56px);
+  top:0px;
+  left:0px;  
+  position:absolute;
+  background-color: #FFFFFF;
+  overflow-y: auto;
+  
+  box-shadow: 0px 0px 18px rgba(52, 52, 52, 0.2);
+}
+
+.builderArrowInactive
+{
+  width:12px;
+  height:12px;	
+  position:absolute;
+  top:26px;
+  left: 428px;
+  background-image:  url("../css/arrow_inactive.png");
+  background-repeat: no-repeat;
+}
+
+.builderArrowActive
+{
+  width:12px;
+  height:12px;	
+  position:absolute;
+  top:26px;
+  left: 428px;
+  background-image:  url("../css/arrow_active.png");
+  background-repeat: no-repeat;
+}
+
+
+.builderArrowInactive
+{
+  width:12px;
+  height:12px;	
+  position:absolute;
+  top:26px;
+  left: 428px;
+  background-image:  url("../css/arrow_inactive.png");
+  background-repeat: no-repeat;
+}
+
+
+
+#builderOptions1
+{
+position:relative;
+height: 230px;	
+}
+
+
+.builderOptionText
+{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+
+position:absolute;
+top:18px;
+left:36px;  
+ }
+
+#optionHouse1
+{
+position: absolute;
+width: 192px;
+height: 128px;
+left: 36px;
+top: 56px;
+
+}
+
+#optionHouse2
+{
+position: absolute;
+width: 192px;
+height: 128px;
+left: 252px;
+top: 56px;
+
+}
+
+.optionHouseActive
+{
+border: 1px solid #FF0000;
+box-sizing: border-box;
+}
+
+.optionHouseInactive
+{
+border: 1px solid #CCCCCC;
+box-sizing: border-box;
+}
+
+
+
+
+
+.optionHouseText
+{
+width: 192px;	
+	
+position: absolute;	
+top: 93px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+text-align: center;
+}
+
+
+body {margin: 0;	padding: 0;			background-color: #FFFFFF;			overflow: hidden;	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Canvas ui */
+#optionsBox
+{
+position: absolute;		
+width: 864px;
+height: 104px;
+bottom:20px;
+left:calc((100vw + 468px)/2  - 432px );
+background-color: #FFFFFF;
+  background-image:  url("../css/texts.png");
+  background-repeat: no-repeat;
+}
+
+#uiForCanvas
+{
+  width:calc(100vw - 468px);
+  height:100vh;
+  position:absolute;
+  top:0;
+  left:468px;	
+  outline: none;	
+}
+
+#iconZoomIn{
+  width:48px;
+  height:48px;
+  top:calc(50vh - 24px - 4px);
+  right:20px;  
+  position:absolute;	
+  background-image:  url("../css/icon_zoom1.png");
+  background-repeat: no-repeat;
+}
+
+#iconZoomOut{
+  width:48px;
+  height:48px;
+  top:calc(50vh + 24px + 4px);
+  right:20px;  
+  position:absolute;	
+  background-image:  url("../css/icon_zoom2.png");
+  background-repeat: no-repeat;
+ 
+}
+
+
+
+#icon3D{
+  width:48px;
+  height:48px;
+  top:72px;
+  right:20px;  
+  position:absolute;	
+  background-image:  url("../css/icon_3d.png");
+  background-repeat: no-repeat;
+}
+#icon2D{
+  width:48px;
+  height:48px;
+  top:120px;
+  right:20px;  
+  position:absolute;	
+  background-image:  url("../css/icon_2d.png");
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+#iconFullScreen{
+  width:48px;
+  height:48px;
+  bottom:76px;
+  right:20px;  
+  position:absolute;	
+  background-image:  url("../css/icon_full.png");
+  background-repeat: no-repeat;
+}
+#iconInfo{
+  width:48px;
+  height:48px;
+  bottom:20px;
+  right:20px;  
+  position:absolute;	
+  background-image:  url("../css/icon_information.png");
+  background-repeat: no-repeat;
+}
+
+
+
+
+/* dfgdf */
+
+#optionHouse2image
+{
+  width:117px;
+  height:73px;
+  top:11px;
+  left:33px;  
+  position:absolute;	
+  background-image:  url("../css/house2.png");
+  background-repeat: no-repeat;
+}
+#optionHouse1image
+{
+  width:117px;
+  height:73px;
+  top:11px;
+  left:33px;  
+  position:absolute;	
+  background-image:  url("../css/house1.png");
+  background-repeat: no-repeat;
+}
+
+.optionHouseCheckboxActive{
+	
+  width:24px;
+  height:24px;
+  top:0px;
+  right:0px;  
+  position:absolute;	
+  background-image:  url("../css/checkboxactive.png");
+  background-repeat: no-repeat;	
+}
